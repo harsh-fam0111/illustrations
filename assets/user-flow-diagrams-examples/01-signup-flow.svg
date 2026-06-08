@@ -1,0 +1,74 @@
+<svg viewBox="0 0 1600 760" xmlns="http://www.w3.org/2000/svg" font-family="Inter, Arial, sans-serif">
+  <defs>
+    <marker id="fa" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8"
+            orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#64748b"/></marker>
+  </defs>
+  <rect width="1600" height="760" fill="#ffffff"/>
+
+  <!-- Title (top-left heading + short underline) -->
+  <text x="80" y="80" font-size="30" font-weight="700" fill="#0f172a">User flow — account signup</text>
+  <line x1="80" y1="98" x2="430" y2="98" stroke="#e2e8f0" stroke-width="3"/>
+
+  <!-- ===== Main path (left to right) ===== -->
+
+  <!-- Start pill -->
+  <rect x="80" y="288" width="150" height="64" rx="32" fill="#eef2ff" stroke="#4f46e5" stroke-width="2"/>
+  <text x="155" y="326" font-size="22" fill="#4f46e5" text-anchor="middle" font-weight="600">Start</text>
+
+  <!-- Process: enter email -->
+  <rect x="300" y="288" width="220" height="64" rx="14" fill="#f8fafc" stroke="#0f172a" stroke-width="2"/>
+  <text x="410" y="326" font-size="20" fill="#0f172a" text-anchor="middle">Enter email + password</text>
+
+  <!-- Decision: email valid? -->
+  <polygon points="700,320 790,260 880,320 790,380" fill="#fffbeb" stroke="#d97706" stroke-width="2"/>
+  <text x="790" y="316" font-size="18" fill="#92400e" text-anchor="middle">Email already</text>
+  <text x="790" y="338" font-size="18" fill="#92400e" text-anchor="middle">registered?</text>
+
+  <!-- Process: send verification -->
+  <rect x="980" y="288" width="220" height="64" rx="14" fill="#f8fafc" stroke="#0f172a" stroke-width="2"/>
+  <text x="1090" y="320" font-size="20" fill="#0f172a" text-anchor="middle">Send verification</text>
+  <text x="1090" y="342" font-size="20" fill="#0f172a" text-anchor="middle">email</text>
+
+  <!-- Decision: code confirmed? -->
+  <polygon points="1320,320 1410,260 1500,320 1410,380" fill="#fffbeb" stroke="#d97706" stroke-width="2"/>
+  <text x="1410" y="316" font-size="18" fill="#92400e" text-anchor="middle">Code</text>
+  <text x="1410" y="338" font-size="18" fill="#92400e" text-anchor="middle">confirmed?</text>
+
+  <!-- End pill: account created -->
+  <rect x="1330" y="560" width="160" height="64" rx="32" fill="#ecfdf5" stroke="#16a34a" stroke-width="2"/>
+  <text x="1410" y="598" font-size="20" fill="#16a34a" text-anchor="middle" font-weight="600">Account ready</text>
+
+  <!-- Branch process: show "sign in instead" -->
+  <rect x="680" y="540" width="220" height="64" rx="14" fill="#f8fafc" stroke="#0f172a" stroke-width="2"/>
+  <text x="790" y="572" font-size="20" fill="#0f172a" text-anchor="middle">Offer sign-in /</text>
+  <text x="790" y="594" font-size="20" fill="#0f172a" text-anchor="middle">password reset</text>
+
+  <!-- Branch process: resend code -->
+  <rect x="980" y="540" width="220" height="64" rx="14" fill="#f8fafc" stroke="#0f172a" stroke-width="2"/>
+  <text x="1090" y="580" font-size="20" fill="#0f172a" text-anchor="middle">Resend code</text>
+
+  <!-- ===== Connectors ===== -->
+  <!-- Start -> enter -->
+  <path d="M230 320 H300" fill="none" stroke="#64748b" stroke-width="2.4" marker-end="url(#fa)"/>
+  <!-- enter -> decision -->
+  <path d="M520 320 H700" fill="none" stroke="#64748b" stroke-width="2.4" marker-end="url(#fa)"/>
+  <!-- decision -> send verification (no) -->
+  <path d="M880 320 H980" fill="none" stroke="#64748b" stroke-width="2.4" marker-end="url(#fa)"/>
+  <text x="930" y="308" font-size="16" fill="#16a34a" text-anchor="middle" font-weight="600">no</text>
+  <!-- decision -> offer sign-in (yes), downward -->
+  <path d="M790 380 V540" fill="none" stroke="#64748b" stroke-width="2.4" marker-end="url(#fa)"/>
+  <text x="812" y="465" font-size="16" fill="#d97706" font-weight="600">yes</text>
+  <!-- offer sign-in -> back to enter email (rejoin) -->
+  <path d="M680 560 H410 V352" fill="none" stroke="#64748b" stroke-width="2.4" marker-end="url(#fa)"/>
+  <text x="540" y="548" font-size="16" fill="#475569" text-anchor="middle">retry</text>
+  <!-- send verification -> code decision -->
+  <path d="M1200 320 H1320" fill="none" stroke="#64748b" stroke-width="2.4" marker-end="url(#fa)"/>
+  <!-- code decision -> account ready (yes), downward -->
+  <path d="M1410 380 V560" fill="none" stroke="#64748b" stroke-width="2.4" marker-end="url(#fa)"/>
+  <text x="1432" y="475" font-size="16" fill="#16a34a" font-weight="600">yes</text>
+  <!-- code decision -> resend code (no) -->
+  <path d="M1320 320 H1090 V540" fill="none" stroke="#64748b" stroke-width="2.4" marker-end="url(#fa)"/>
+  <text x="1205" y="308" font-size="16" fill="#d97706" text-anchor="middle" font-weight="600">no</text>
+  <!-- resend code -> back up to code decision -->
+  <path d="M1200 562 H1260 V300 H1330" fill="none" stroke="#64748b" stroke-width="2.4" marker-end="url(#fa)"/>
+</svg>

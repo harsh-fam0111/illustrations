@@ -45,81 +45,90 @@ handle is the original Codex name; in Claude Code you can also just say
 ### Plan only — shot list, no images
 
 ```text
-Use $ian-xiaohei-illustrations 先不要生图。
-请分析下面这篇文章哪里值得配图，输出 5 张左右的 shot list。
-每张图写清楚：
-- 放在哪个段落后
-- 图的主题
-- 核心意思
-- 结构类型
-- 小黑在图里做什么
-- 建议元素
-- 建议中文标注词
+Use $ian-xiaohei-illustrations — don't generate images yet.
+Analyze the article below and decide where illustrations would help.
+Output a shot list of about 5 shots. For each shot, specify:
+- which paragraph it goes after
+- the theme
+- the core idea
+- the structure type
+- what Xiaohei is doing
+- suggested elements
+- suggested short labels
 
-<粘贴文章>
+<paste article>
 ```
 
 ### Body illustrations for an article
 
 ```text
-Use $ian-xiaohei-illustrations 把下面这篇文章生成 4 张小黑怪诞正文配图。
-要求：16:9 横版、纯白背景、黑色手绘线稿、少量红橙蓝中文手写批注。
-每张图只讲一个核心结构，不要做 PPT 信息图，不要可爱卡通。
+Use $ian-xiaohei-illustrations — generate 4 weird Xiaohei body illustrations
+for the article below.
+Requirements: 16:9 landscape, pure white background, black hand-drawn linework,
+a few red/orange/blue handwritten labels.
+Each image covers only one core structure. No PPT infographics, no cute cartoons.
 
-<粘贴文章>
+<paste article>
 ```
 
 ### Long-form illustration strategy
 
 ```text
-Use $ian-xiaohei-illustrations 给这篇长文做配图策略。
-不要平均配图，只挑认知锚点：核心判断、输入输出闭环、前后对比、常见坑、承接路径。
-默认 6-8 张，先输出 shot list，不要生成图片。
+Use $ian-xiaohei-illustrations — plan an illustration strategy for this long article.
+Don't illustrate evenly; pick only the cognitive anchors: the core judgment,
+input→output loops, before/after, common pitfalls, handoff paths.
+Default 6-8 shots. Output the shot list first; don't generate images yet.
 
-<粘贴文章>
+<paste article>
 ```
 
 ### One image for a single point
 
 ```text
-Use $ian-xiaohei-illustrations 为这个观点生成一张 16:9 正文配图：
+Use $ian-xiaohei-illustrations — generate one 16:9 body illustration for this point:
 
-信任不是喊出来的，而是一块证据一块证据铺过去。
+Trust isn't shouted out; it's laid down one piece of evidence at a time.
 
-画面要怪诞但清爽，小黑必须承担核心动作。
-中文标注最多 5 个，短一点。
+The image should be weird but clean, and Xiaohei must carry the core action.
+At most 5 labels, kept short.
 ```
 
 ### Workflow theme
 
 ```text
-Use $ian-xiaohei-illustrations 为"把一条原始素材加工成流量、信任、转化三种内容"生成一张图。
-不要画正式流程图，不要复刻一鱼多吃旧案例。
-请重新发明一个新的低科技隐喻，让小黑参与核心动作。
+Use $ian-xiaohei-illustrations — generate one image for "turning a single raw
+material into three kinds of content: reach, trust, and conversion."
+Don't draw a formal flowchart, and don't replicate the old "one fish, many dishes" case.
+Reinvent a fresh low-tech metaphor, and let Xiaohei drive the core action.
 ```
 
 ### Edit — remove a title
 
 ```text
-Use $ian-xiaohei-illustrations 帮我编辑这张图。
-去掉左上角的"Workflow / 流程图"标题和下划线，其他内容保持不变。
-不要新增任何文字或物件。
+Use $ian-xiaohei-illustrations — edit this image for me.
+Remove the top-left "Workflow / Flowchart" title and its underline;
+keep everything else unchanged.
+Don't add any new text or objects.
 ```
 
 ### Edit — make Xiaohei carry the action
 
 ```text
-Use $ian-xiaohei-illustrations 这张图方向对，但小黑有点像装饰。
-请保持核心意思不变，重生成一版：让小黑成为真正推动结构运转的人。
-画面更怪一点，但仍然纯白、清爽、少字。
+Use $ian-xiaohei-illustrations — this image is on the right track, but Xiaohei
+looks decorative.
+Keep the core idea the same and regenerate a version where Xiaohei is the one
+actually driving the structure.
+Make it a bit weirder, but still pure white, clean, and sparse on text.
 ```
 
 ### Generate a style sample set
 
 ```text
-Use $ian-xiaohei-illustrations 输出 5 个不同主题的小黑正文配图效果。
-主题分别覆盖：信息过载、产品验证、内容复利、一人公司、信任建立。
-每张单独生成，不要拼成一张。
+Use $ian-xiaohei-illustrations — produce 5 Xiaohei body illustrations on
+different themes.
+Cover: information overload, product validation, content compounding,
+the one-person company, building trust.
+Generate each separately; don't combine them into one image.
 ```
 
 ---
@@ -132,10 +141,10 @@ copy their compositions** (the skill reinvents a fresh metaphor every time).
 
 | Preview | File | Theme | Metaphor — what Xiaohei does |
 |---|---|---|---|
-| Trust = bricks | [01-trust-evidence-bricks.svg](../../../assets/xiaohei-illustrations/01-trust-evidence-bricks.svg) | 信任建立 / trust | Bridges a void by laying evidence-bricks one at a time toward a far "trust" flag — a crossed-out megaphone says it's *not* shouted. |
-| Info firehose | [02-info-firehose.svg](../../../assets/xiaohei-illustrations/02-info-firehose.svg) | 信息过载 / overload | Holds up a tiny cup under a giant gushing faucet, catching almost none of the torrent. |
-| Content snowball | [03-content-snowball.svg](../../../assets/xiaohei-illustrations/03-content-snowball.svg) | 内容复利 / compounding | Pushes a snowball up a slope; the same push rolls up ever more content toward a huge "compounding" ball. |
-| Info courier | [info-mover/01-info-courier.svg](../../../assets/info-mover-illustrations/01-info-courier.svg) | 搬运信息 / busywork | Shuttles a stack of copy-pasted sheets between Tool A and Tool B, blank thought bubble overhead. |
+| Trust = bricks | [01-trust-evidence-bricks.svg](../../../assets/xiaohei-illustrations/01-trust-evidence-bricks.svg) | Building trust | Bridges a void by laying evidence-bricks one at a time toward a far "trust" flag — a crossed-out megaphone says it's *not* shouted. |
+| Info firehose | [02-info-firehose.svg](../../../assets/xiaohei-illustrations/02-info-firehose.svg) | Information overload | Holds up a tiny cup under a giant gushing faucet, catching almost none of the torrent. |
+| Content snowball | [03-content-snowball.svg](../../../assets/xiaohei-illustrations/03-content-snowball.svg) | Content compounding | Pushes a snowball up a slope; the same push rolls up ever more content toward a huge "compounding" ball. |
+| Info courier | [info-mover/01-info-courier.svg](../../../assets/info-mover-illustrations/01-info-courier.svg) | Busywork / moving info | Shuttles a stack of copy-pasted sheets between Tool A and Tool B, blank thought bubble overhead. |
 
 Each is one 16:9 image, pure white, one core structure, ≤5 short labels.
 

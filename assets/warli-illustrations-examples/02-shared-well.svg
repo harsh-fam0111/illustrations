@@ -1,0 +1,64 @@
+<svg viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg"
+     font-family="'Bradley Hand','Comic Sans MS','Segoe Print',cursive">
+  <defs>
+    <filter id="paint" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="13" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="3.4" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <!-- reusable Warli figure, origin at torso center -->
+    <g id="warli">
+      <circle cx="0" cy="-50" r="9" fill="#f2e9dc"/>
+      <path d="M-15 -38 L15 -38 L0 0 L15 38 L-15 38 L0 0 Z" fill="#f2e9dc"/>
+      <path d="M-12 -32 L-34 -14 M12 -32 L34 -14" stroke="#f2e9dc" stroke-width="3.4"
+            fill="none" stroke-linecap="round"/>
+      <path d="M-12 36 L-22 64 M12 36 L22 64" stroke="#f2e9dc" stroke-width="3.4"
+            fill="none" stroke-linecap="round"/>
+    </g>
+    <!-- a round pot carried on the head -->
+    <g id="pot">
+      <path d="M-18 0 Q-22 26 0 30 Q22 26 18 0 Q0 -10 -18 0 Z" fill="#f2e9dc"/>
+      <path d="M-18 0 Q0 -6 18 0" stroke="#a0531e" stroke-width="2.4" fill="none"/>
+    </g>
+  </defs>
+
+  <rect width="1600" height="900" fill="#9c4a1a"/>
+
+  <g filter="url(#paint)">
+    <!-- sun in the corner for rhythm -->
+    <circle cx="1380" cy="170" r="34" fill="none" stroke="#f2e9dc" stroke-width="3"/>
+    <path d="M1380 110 L1380 92 M1380 248 L1380 230 M1320 170 L1302 170 M1440 170 L1458 170
+             M1338 128 L1326 116 M1422 128 L1434 116 M1338 212 L1326 224 M1422 212 L1434 224"
+          stroke="#f2e9dc" stroke-width="2.6" stroke-linecap="round"/>
+
+    <!-- the well: a circular mouth in the centre -->
+    <ellipse cx="800" cy="470" rx="120" ry="40" fill="none" stroke="#f2e9dc" stroke-width="3.4"/>
+    <path d="M680 470 L680 640 M920 470 L920 640" stroke="#f2e9dc" stroke-width="3.4" stroke-linecap="round"/>
+    <path d="M680 640 Q800 678 920 640" stroke="#f2e9dc" stroke-width="3.4" fill="none"/>
+    <!-- water level wavy lines inside -->
+    <path d="M712 470 q22 -14 44 0 t44 0 t44 0" stroke="#f2e9dc" stroke-width="2.4" fill="none"/>
+
+    <!-- a beam and rope over the well -->
+    <path d="M700 320 L900 320" stroke="#f2e9dc" stroke-width="3" stroke-linecap="round"/>
+    <path d="M800 320 L800 432" stroke="#f2e9dc" stroke-width="2.4"/>
+
+    <!-- ground line -->
+    <path d="M120 730 L1480 730" stroke="#f2e9dc" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+    <!-- figures arriving from both sides, pots on heads -->
+    <use href="#warli" transform="translate(360,680) scale(0.95)"/>
+    <use href="#pot" transform="translate(360,580) scale(0.9)"/>
+    <use href="#warli" transform="translate(540,680) scale(0.95)"/>
+    <use href="#pot" transform="translate(540,580) scale(0.9)"/>
+
+    <use href="#warli" transform="translate(1060,680) scale(0.95)"/>
+    <use href="#pot" transform="translate(1060,580) scale(0.9)"/>
+    <use href="#warli" transform="translate(1240,680) scale(0.95)"/>
+    <use href="#pot" transform="translate(1240,580) scale(0.9)"/>
+  </g>
+
+  <!-- labels -->
+  <text x="690" y="800" font-size="34" fill="#f2e9dc" filter="url(#paint)"
+        transform="rotate(-1 690 800)">one source</text>
+  <text x="300" y="500" font-size="28" fill="#f2e9dc" filter="url(#paint)"
+        transform="rotate(-3 300 500)">many draw from it</text>
+</svg>

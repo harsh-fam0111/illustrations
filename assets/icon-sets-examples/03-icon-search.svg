@@ -1,0 +1,6 @@
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none"
+     stroke="#0f172a" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+  <!-- search — split from the navigation set, native 24x24 grid, 2u padding -->
+  <circle cx="10.5" cy="10.5" r="6.5"/>
+  <path d="M15.5 15.5 l4 4"/>
+</svg>

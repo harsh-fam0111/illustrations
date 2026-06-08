@@ -1,0 +1,117 @@
+<svg viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg" font-family="Inter, Arial, sans-serif">
+  <rect width="1600" height="900" fill="#ffffff"/>
+
+  <!-- Title -->
+  <text x="80" y="80" font-size="30" font-weight="700" fill="#0f172a">Journey map — new-user onboarding</text>
+  <line x1="80" y1="98" x2="540" y2="98" stroke="#e2e8f0" stroke-width="3"/>
+
+  <!-- Layout constants:
+       lane label column x: 80..280
+       stage columns: 4 stages, width 300, starting at x=300
+       stage centers: 450, 750, 1050, 1350 -->
+
+  <!-- Stage header band -->
+  <rect x="300" y="140" width="1200" height="64" rx="14" fill="#eef2ff" stroke="#4f46e5" stroke-width="2"/>
+  <line x1="600" y1="140" x2="600" y2="204" stroke="#4f46e5" stroke-width="1.5" opacity="0.4"/>
+  <line x1="900" y1="140" x2="900" y2="204" stroke="#4f46e5" stroke-width="1.5" opacity="0.4"/>
+  <line x1="1200" y1="140" x2="1200" y2="204" stroke="#4f46e5" stroke-width="1.5" opacity="0.4"/>
+  <text x="450" y="180" font-size="22" fill="#4f46e5" text-anchor="middle" font-weight="700">Discover</text>
+  <text x="750" y="180" font-size="22" fill="#4f46e5" text-anchor="middle" font-weight="700">Sign up</text>
+  <text x="1050" y="180" font-size="22" fill="#4f46e5" text-anchor="middle" font-weight="700">First setup</text>
+  <text x="1350" y="180" font-size="22" fill="#4f46e5" text-anchor="middle" font-weight="700">First value</text>
+
+  <!-- Lane labels -->
+  <text x="90" y="262" font-size="20" fill="#0f172a" font-weight="600">Actions</text>
+  <text x="90" y="392" font-size="20" fill="#0f172a" font-weight="600">Thoughts</text>
+  <text x="90" y="522" font-size="20" fill="#0f172a" font-weight="600">Touchpoints</text>
+  <text x="90" y="662" font-size="20" fill="#0f172a" font-weight="600">Emotion</text>
+  <text x="90" y="822" font-size="20" fill="#0f172a" font-weight="600">Opportunities</text>
+
+  <!-- Lane separators -->
+  <line x1="80" y1="220" x2="1500" y2="220" stroke="#e2e8f0" stroke-width="2"/>
+  <line x1="80" y1="340" x2="1500" y2="340" stroke="#e2e8f0" stroke-width="2"/>
+  <line x1="80" y1="470" x2="1500" y2="470" stroke="#e2e8f0" stroke-width="2"/>
+  <line x1="80" y1="600" x2="1500" y2="600" stroke="#e2e8f0" stroke-width="2"/>
+  <line x1="80" y1="740" x2="1500" y2="740" stroke="#e2e8f0" stroke-width="2"/>
+  <line x1="80" y1="860" x2="1500" y2="860" stroke="#e2e8f0" stroke-width="2"/>
+
+  <!-- ===== Actions row (chips) ===== -->
+  <rect x="330" y="244" width="240" height="64" rx="12" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="450" y="276" font-size="16" fill="#0f172a" text-anchor="middle">Read landing page,</text>
+  <text x="450" y="296" font-size="16" fill="#0f172a" text-anchor="middle">compare options</text>
+
+  <rect x="630" y="244" width="240" height="64" rx="12" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="750" y="276" font-size="16" fill="#0f172a" text-anchor="middle">Create account,</text>
+  <text x="750" y="296" font-size="16" fill="#0f172a" text-anchor="middle">verify email</text>
+
+  <rect x="930" y="244" width="240" height="64" rx="12" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="1050" y="276" font-size="16" fill="#0f172a" text-anchor="middle">Import data,</text>
+  <text x="1050" y="296" font-size="16" fill="#0f172a" text-anchor="middle">pick a template</text>
+
+  <rect x="1230" y="244" width="240" height="64" rx="12" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="1350" y="276" font-size="16" fill="#0f172a" text-anchor="middle">Complete first task,</text>
+  <text x="1350" y="296" font-size="16" fill="#0f172a" text-anchor="middle">share result</text>
+
+  <!-- ===== Thoughts row ===== -->
+  <rect x="330" y="372" width="240" height="64" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="450" y="404" font-size="16" fill="#475569" text-anchor="middle" font-style="italic">"Is this worth</text>
+  <text x="450" y="424" font-size="16" fill="#475569" text-anchor="middle" font-style="italic">my time?"</text>
+
+  <rect x="630" y="372" width="240" height="64" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="750" y="404" font-size="16" fill="#475569" text-anchor="middle" font-style="italic">"Hope this isn't</text>
+  <text x="750" y="424" font-size="16" fill="#475569" text-anchor="middle" font-style="italic">a long form."</text>
+
+  <rect x="930" y="372" width="240" height="64" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="1050" y="404" font-size="16" fill="#475569" text-anchor="middle" font-style="italic">"So many options</text>
+  <text x="1050" y="424" font-size="16" fill="#475569" text-anchor="middle" font-style="italic">— where do I start?"</text>
+
+  <rect x="1230" y="372" width="240" height="64" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="1350" y="404" font-size="16" fill="#475569" text-anchor="middle" font-style="italic">"That was easier</text>
+  <text x="1350" y="424" font-size="16" fill="#475569" text-anchor="middle" font-style="italic">than I expected!"</text>
+
+  <!-- ===== Touchpoints row ===== -->
+  <rect x="350" y="500" width="200" height="44" rx="22" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="450" y="528" font-size="16" fill="#475569" text-anchor="middle">Website, ads</text>
+
+  <rect x="650" y="500" width="200" height="44" rx="22" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="750" y="528" font-size="16" fill="#475569" text-anchor="middle">Signup form, email</text>
+
+  <rect x="950" y="500" width="200" height="44" rx="22" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="1050" y="528" font-size="16" fill="#475569" text-anchor="middle">In-app wizard</text>
+
+  <rect x="1250" y="500" width="200" height="44" rx="22" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="1350" y="528" font-size="16" fill="#475569" text-anchor="middle">Dashboard, tooltips</text>
+
+  <!-- ===== Emotion row (polyline curve, the signature element) =====
+       y range: high ~620 (green), low ~720 (red). baseline ~670 -->
+  <line x1="300" y1="670" x2="1500" y2="670" stroke="#e2e8f0" stroke-width="1.5" stroke-dasharray="4 6"/>
+  <!-- Discover: neutral-high 645 ; Sign up: dip 700 ; First setup: low 718 ; First value: high 628 -->
+  <polyline points="450,645 750,700 1050,718 1350,628" fill="none" stroke="#4f46e5" stroke-width="3"/>
+  <!-- dots with emotion colors -->
+  <circle cx="450" cy="645" r="9" fill="#16a34a" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="750" cy="700" r="9" fill="#d97706" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="1050" cy="718" r="9" fill="#ef4444" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="1350" cy="628" r="9" fill="#16a34a" stroke="#ffffff" stroke-width="2"/>
+  <!-- mood labels -->
+  <text x="450" y="632" font-size="14" fill="#16a34a" text-anchor="middle">Curious</text>
+  <text x="750" y="724" font-size="14" fill="#d97706" text-anchor="middle">Impatient</text>
+  <text x="1050" y="742" font-size="14" fill="#ef4444" text-anchor="middle">Overwhelmed</text>
+  <text x="1350" y="615" font-size="14" fill="#16a34a" text-anchor="middle">Delighted</text>
+
+  <!-- ===== Opportunities row ===== -->
+  <rect x="330" y="772" width="240" height="64" rx="12" fill="#ecfdf5" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="450" y="804" font-size="16" fill="#166534" text-anchor="middle">Lead with one</text>
+  <text x="450" y="824" font-size="16" fill="#166534" text-anchor="middle">clear value prop</text>
+
+  <rect x="630" y="772" width="240" height="64" rx="12" fill="#ecfdf5" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="750" y="804" font-size="16" fill="#166534" text-anchor="middle">Single-field signup,</text>
+  <text x="750" y="824" font-size="16" fill="#166534" text-anchor="middle">social login</text>
+
+  <rect x="930" y="772" width="240" height="64" rx="12" fill="#ecfdf5" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="1050" y="804" font-size="16" fill="#166534" text-anchor="middle">Smart default</text>
+  <text x="1050" y="824" font-size="16" fill="#166534" text-anchor="middle">template + sample data</text>
+
+  <rect x="1230" y="772" width="240" height="64" rx="12" fill="#ecfdf5" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="1350" y="804" font-size="16" fill="#166534" text-anchor="middle">Celebrate the win,</text>
+  <text x="1350" y="824" font-size="16" fill="#166534" text-anchor="middle">prompt to invite</text>
+</svg>

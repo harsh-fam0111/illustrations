@@ -1,0 +1,70 @@
+<svg viewBox="0 0 560 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter, Arial, sans-serif">
+  <rect width="560" height="1080" fill="#f1f5f9"/>
+  <!-- phone shell -->
+  <rect x="40" y="30" width="480" height="1020" rx="46" fill="#ffffff" stroke="#0f172a" stroke-width="2.5"/>
+  <!-- status bar -->
+  <text x="74" y="78" font-size="20" font-weight="600" fill="#0f172a">9:41</text>
+  <rect x="430" y="62" width="22" height="14" rx="3" fill="#0f172a"/>
+  <rect x="458" y="64" width="28" height="12" rx="3" fill="#0f172a"/>
+
+  <!-- lo-fi marker -->
+  <text x="74" y="108" font-size="13" fill="#94a3b8">— lo-fi wireframe —</text>
+
+  <!-- app bar: back chevron + title -->
+  <path d="M88 142 l-14 14 l14 14" fill="none" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="120" y="144" width="140" height="22" rx="6" fill="#cbd5e1"/>
+
+  <!-- profile header card -->
+  <rect x="74" y="200" width="412" height="120" rx="16" fill="#f8fafc" stroke="#e2e8f0" stroke-width="2"/>
+  <circle cx="138" cy="260" r="36" fill="#e2e8f0"/>
+  <rect x="198" y="238" width="180" height="18" rx="9" fill="#cbd5e1"/>
+  <rect x="198" y="270" width="120" height="14" rx="7" fill="#e2e8f0"/>
+  <path d="M442 254 l-12 12 l12 12" fill="none" stroke="#94a3b8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" transform="rotate(180 437 266)"/>
+
+  <!-- section header -->
+  <rect x="74" y="356" width="110" height="16" rx="7" fill="#cbd5e1"/>
+
+  <!-- settings list row 1: toggle ON -->
+  <rect x="90" y="398" width="24" height="24" rx="6" fill="#e2e8f0"/>
+  <rect x="138" y="402" width="180" height="16" rx="8" fill="#cbd5e1"/>
+  <rect x="420" y="400" width="52" height="28" rx="14" fill="#0f172a"/>
+  <circle cx="458" cy="414" r="11" fill="#ffffff"/>
+
+  <line x1="90" y1="450" x2="486" y2="450" stroke="#e2e8f0" stroke-width="1.5"/>
+
+  <!-- settings list row 2: toggle OFF -->
+  <rect x="90" y="470" width="24" height="24" rx="6" fill="#e2e8f0"/>
+  <rect x="138" y="474" width="150" height="16" rx="8" fill="#cbd5e1"/>
+  <rect x="420" y="472" width="52" height="28" rx="14" fill="#e2e8f0"/>
+  <circle cx="434" cy="486" r="11" fill="#ffffff"/>
+
+  <line x1="90" y1="522" x2="486" y2="522" stroke="#e2e8f0" stroke-width="1.5"/>
+
+  <!-- settings list row 3: chevron -->
+  <rect x="90" y="542" width="24" height="24" rx="6" fill="#e2e8f0"/>
+  <rect x="138" y="546" width="200" height="16" rx="8" fill="#cbd5e1"/>
+  <path d="M462 548 l12 6 l-12 6" fill="none" stroke="#94a3b8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- section header 2 -->
+  <rect x="74" y="616" width="130" height="16" rx="7" fill="#cbd5e1"/>
+
+  <!-- row 4 -->
+  <rect x="90" y="658" width="24" height="24" rx="6" fill="#e2e8f0"/>
+  <rect x="138" y="662" width="170" height="16" rx="8" fill="#cbd5e1"/>
+  <path d="M462 664 l12 6 l-12 6" fill="none" stroke="#94a3b8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <line x1="90" y1="710" x2="486" y2="710" stroke="#e2e8f0" stroke-width="1.5"/>
+
+  <!-- row 5 -->
+  <rect x="90" y="730" width="24" height="24" rx="6" fill="#e2e8f0"/>
+  <rect x="138" y="734" width="140" height="16" rx="8" fill="#cbd5e1"/>
+  <path d="M462 736 l12 6 l-12 6" fill="none" stroke="#94a3b8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- primary action: Save -->
+  <rect x="74" y="820" width="412" height="60" rx="14" fill="#0f172a"/>
+  <rect x="232" y="843" width="96" height="14" rx="7" fill="#ffffff"/>
+
+  <!-- secondary: log out (outline) -->
+  <rect x="74" y="896" width="412" height="60" rx="14" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+  <rect x="216" y="919" width="128" height="14" rx="7" fill="#cbd5e1"/>
+</svg>

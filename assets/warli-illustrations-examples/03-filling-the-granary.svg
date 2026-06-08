@@ -1,0 +1,71 @@
+<svg viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg"
+     font-family="'Bradley Hand','Comic Sans MS','Segoe Print',cursive">
+  <defs>
+    <filter id="paint" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="21" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <marker id="awh" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7"
+            orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10" fill="none" stroke="#f2e9dc" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <!-- reusable Warli figure, origin at torso center -->
+    <g id="warli">
+      <circle cx="0" cy="-50" r="9" fill="#f2e9dc"/>
+      <path d="M-15 -38 L15 -38 L0 0 L15 38 L-15 38 L0 0 Z" fill="#f2e9dc"/>
+      <path d="M-12 -32 L-34 -14 M12 -32 L34 -14" stroke="#f2e9dc" stroke-width="3.4"
+            fill="none" stroke-linecap="round"/>
+      <path d="M-12 36 L-22 64 M12 36 L22 64" stroke="#f2e9dc" stroke-width="3.4"
+            fill="none" stroke-linecap="round"/>
+    </g>
+    <!-- a small sheaf / handful of grain -->
+    <g id="sheaf">
+      <path d="M0 0 L0 -26 M0 0 L-9 -24 M0 0 L9 -24 M0 0 L-16 -20 M0 0 L16 -20"
+            stroke="#f2e9dc" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+    </g>
+  </defs>
+
+  <rect width="1600" height="900" fill="#b06a3a"/>
+
+  <g filter="url(#paint)">
+    <!-- ground line -->
+    <path d="M120 720 L1480 720" stroke="#f2e9dc" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+    <!-- LEFT: a single small handful, a lone figure starting out -->
+    <use href="#warli" transform="translate(260,672) scale(0.85)"/>
+    <use href="#sheaf" transform="translate(360,690) scale(1.0)"/>
+
+    <!-- a few stalks in the field on the left, sparse -->
+    <use href="#sheaf" transform="translate(150,700) scale(0.8)"/>
+    <use href="#sheaf" transform="translate(440,704) scale(0.7)"/>
+
+    <!-- RIGHT: the granary, a round mud silo on stilts brimming with grain -->
+    <!-- stilts -->
+    <path d="M1150 720 L1160 640 M1370 720 L1360 640" stroke="#f2e9dc" stroke-width="3" stroke-linecap="round"/>
+    <!-- body of granary -->
+    <path d="M1150 640 Q1140 500 1260 470 Q1380 500 1370 640 Z" fill="none" stroke="#f2e9dc" stroke-width="3.4"/>
+    <!-- conical thatched roof -->
+    <path d="M1120 470 L1260 360 L1400 470 Z" fill="none" stroke="#f2e9dc" stroke-width="3.4"/>
+    <!-- grain texture: rhythmic hatch inside the body -->
+    <path d="M1180 560 L1340 560 M1175 595 L1345 595 M1185 525 L1335 525"
+          stroke="#f2e9dc" stroke-width="2.4" stroke-linecap="round"/>
+
+    <!-- two figures pouring grain into the granary -->
+    <use href="#warli" transform="translate(1230,690) scale(0.85)"/>
+    <use href="#warli" transform="translate(1300,690) scale(0.85)"/>
+    <use href="#sheaf" transform="translate(1230,640) scale(0.9)"/>
+
+    <!-- accumulation arrow: small left to brimming right -->
+    <path d="M470 410 Q860 360 1180 410" stroke="#d9a441" stroke-width="3" fill="none"
+          stroke-linecap="round" marker-end="url(#awh)"/>
+  </g>
+
+  <!-- labels -->
+  <text x="230" y="810" font-size="30" fill="#f2e9dc" filter="url(#paint)"
+        transform="rotate(-2 230 810)">one handful a day</text>
+  <text x="1130" y="810" font-size="30" fill="#f2e9dc" filter="url(#paint)"
+        transform="rotate(2 1130 810)">a full granary</text>
+  <text x="700" y="330" font-size="32" fill="#d9a441" filter="url(#paint)"
+        transform="rotate(-1 700 330)">small adds up</text>
+</svg>

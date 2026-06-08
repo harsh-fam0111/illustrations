@@ -1,0 +1,77 @@
+<svg viewBox="0 0 560 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter, Arial, sans-serif">
+  <rect width="560" height="1080" fill="#f1f5f9"/>
+  <!-- phone shell -->
+  <rect x="40" y="30" width="480" height="1020" rx="46" fill="#ffffff" stroke="#0f172a" stroke-width="2.5"/>
+  <!-- status bar -->
+  <text x="74" y="78" font-size="20" font-weight="600" fill="#0f172a">9:41</text>
+  <rect x="430" y="62" width="22" height="14" rx="3" fill="#0f172a"/>
+  <rect x="458" y="64" width="28" height="12" rx="3" fill="#0f172a"/>
+
+  <!-- lo-fi marker -->
+  <text x="74" y="108" font-size="13" fill="#94a3b8">— lo-fi wireframe —</text>
+
+  <!-- app bar: title + trailing avatar -->
+  <rect x="74" y="128" width="150" height="24" rx="7" fill="#cbd5e1"/>
+  <circle cx="466" cy="140" r="20" fill="#e2e8f0"/>
+
+  <!-- chips / tags row -->
+  <rect x="74" y="180" width="84" height="34" rx="999" fill="#0f172a"/>
+  <rect x="170" y="180" width="96" height="34" rx="999" fill="#f8fafc" stroke="#e2e8f0" stroke-width="2"/>
+  <rect x="278" y="180" width="80" height="34" rx="999" fill="#f8fafc" stroke="#e2e8f0" stroke-width="2"/>
+  <rect x="370" y="180" width="96" height="34" rx="999" fill="#f8fafc" stroke="#e2e8f0" stroke-width="2"/>
+
+  <!-- hero / media card -->
+  <rect x="74" y="240" width="412" height="200" rx="16" fill="#e2e8f0"/>
+  <path d="M222 392 l40 -56 l30 40 l24 -28 l18 44 z" fill="#94a3b8"/>
+  <circle cx="408" cy="300" r="20" fill="#cbd5e1"/>
+  <rect x="98" y="404" width="180" height="16" rx="8" fill="#cbd5e1"/>
+
+  <!-- section header: title + see all -->
+  <rect x="74" y="476" width="120" height="20" rx="7" fill="#cbd5e1"/>
+  <rect x="420" y="478" width="66" height="14" rx="7" fill="#e2e8f0"/>
+
+  <!-- list row 1 -->
+  <circle cx="98" cy="548" r="26" fill="#e2e8f0"/>
+  <rect x="142" y="528" width="220" height="16" rx="8" fill="#cbd5e1"/>
+  <rect x="142" y="556" width="150" height="12" rx="6" fill="#e2e8f0"/>
+  <rect x="430" y="540" width="56" height="20" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="2"/>
+
+  <!-- list row 2 -->
+  <circle cx="98" cy="624" r="26" fill="#e2e8f0"/>
+  <rect x="142" y="604" width="190" height="16" rx="8" fill="#cbd5e1"/>
+  <rect x="142" y="632" width="130" height="12" rx="6" fill="#e2e8f0"/>
+  <rect x="430" y="616" width="56" height="20" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="2"/>
+
+  <!-- list row 3 -->
+  <circle cx="98" cy="700" r="26" fill="#e2e8f0"/>
+  <rect x="142" y="680" width="232" height="16" rx="8" fill="#cbd5e1"/>
+  <rect x="142" y="708" width="120" height="12" rx="6" fill="#e2e8f0"/>
+  <rect x="430" y="692" width="56" height="20" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="2"/>
+
+  <!-- list row 4 -->
+  <circle cx="98" cy="776" r="26" fill="#e2e8f0"/>
+  <rect x="142" y="756" width="200" height="16" rx="8" fill="#cbd5e1"/>
+  <rect x="142" y="784" width="160" height="12" rx="6" fill="#e2e8f0"/>
+  <rect x="430" y="768" width="56" height="20" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="2"/>
+
+  <!-- FAB -->
+  <circle cx="446" cy="892" r="30" fill="#0f172a"/>
+  <path d="M446 878 v28 M432 892 h28" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- bottom tab bar -->
+  <line x1="40" y1="956" x2="520" y2="956" stroke="#e2e8f0" stroke-width="2"/>
+  <!-- home (active, inked) -->
+  <path d="M110 1006 l24 -20 l24 20 M118 1000 v18 h32 v-18" fill="none" stroke="#0f172a" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>
+  <!-- search -->
+  <circle cx="218" cy="1000" r="11" fill="none" stroke="#94a3b8" stroke-width="2.6"/>
+  <line x1="227" y1="1009" x2="236" y2="1018" stroke="#94a3b8" stroke-width="2.6" stroke-linecap="round"/>
+  <!-- add -->
+  <rect x="296" y="988" width="24" height="24" rx="6" fill="none" stroke="#94a3b8" stroke-width="2.6"/>
+  <path d="M308 994 v12 M302 1000 h12" stroke="#94a3b8" stroke-width="2.4" stroke-linecap="round"/>
+  <!-- bell -->
+  <path d="M392 1008 q0 -22 18 -22 q18 0 18 22 z" fill="none" stroke="#94a3b8" stroke-width="2.6" stroke-linejoin="round"/>
+  <line x1="404" y1="1014" x2="416" y2="1014" stroke="#94a3b8" stroke-width="2.6" stroke-linecap="round"/>
+  <!-- profile -->
+  <circle cx="466" cy="996" r="8" fill="none" stroke="#94a3b8" stroke-width="2.6"/>
+  <path d="M452 1016 q14 -16 28 0" fill="none" stroke="#94a3b8" stroke-width="2.6" stroke-linecap="round"/>
+</svg>

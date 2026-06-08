@@ -1,0 +1,133 @@
+<svg viewBox="0 0 960 720" xmlns="http://www.w3.org/2000/svg"
+     font-family="Inter, 'Helvetica Neue', Arial, sans-serif">
+  <rect x="0" y="0" width="960" height="720" fill="#ffffff"/>
+
+  <!-- Title -->
+  <text x="48" y="56" font-size="24" font-weight="600" fill="#0f172a">Button — anatomy &amp; states</text>
+  <text x="48" y="80" font-size="13" fill="#475569">Default size: height 48 · radius 8 · gap 8 · padding 16</text>
+
+  <!-- ====================== ANATOMY ====================== -->
+  <text x="48" y="132" font-size="14" font-weight="600" fill="#475569" letter-spacing="0.5">ANATOMY</text>
+
+  <!-- Container -->
+  <rect x="160" y="168" width="200" height="48" rx="8" fill="#4f46e5"/>
+  <!-- Content row: leading icon + label -->
+  <g stroke="#ffffff" stroke-width="2" stroke-linecap="round">
+    <line x1="196" y1="192" x2="212" y2="192"/>
+    <line x1="204" y1="184" x2="204" y2="200"/>
+  </g>
+  <text x="228" y="197" font-size="15" font-weight="500" fill="#ffffff">Add item</text>
+
+  <!-- Focus ring -->
+  <rect x="154" y="162" width="212" height="60" rx="12" fill="none" stroke="#4f46e5" stroke-width="2" stroke-dasharray="4 4"/>
+
+  <!-- Annotation: width dimension -->
+  <g stroke="#94a3b8" stroke-width="1">
+    <line x1="160" y1="240" x2="360" y2="240"/>
+    <line x1="160" y1="234" x2="160" y2="246"/>
+    <line x1="360" y1="234" x2="360" y2="246"/>
+  </g>
+  <text x="260" y="258" font-size="11" fill="#64748b" text-anchor="middle">min-width 64 · pad 16</text>
+
+  <!-- Annotation: height dimension -->
+  <g stroke="#94a3b8" stroke-width="1">
+    <line x1="392" y1="168" x2="392" y2="216"/>
+    <line x1="386" y1="168" x2="398" y2="168"/>
+    <line x1="386" y1="216" x2="398" y2="216"/>
+  </g>
+  <text x="404" y="196" font-size="11" fill="#64748b">height 48</text>
+
+  <!-- Callouts with leader lines -->
+  <g stroke="#94a3b8" stroke-width="1">
+    <line x1="115" y1="192" x2="160" y2="192"/>
+    <line x1="204" y1="155" x2="204" y2="184"/>
+    <line x1="270" y1="197" x2="270" y2="155"/>
+    <line x1="500" y1="192" x2="368" y2="192"/>
+  </g>
+  <text x="110" y="196" font-size="11" fill="#64748b" text-anchor="end">1 Container</text>
+  <text x="204" y="148" font-size="11" fill="#64748b" text-anchor="middle">3 Leading icon</text>
+  <text x="270" y="142" font-size="11" fill="#64748b" text-anchor="middle">2 Label</text>
+  <text x="506" y="196" font-size="11" fill="#64748b">5 Focus ring</text>
+
+  <!-- ====================== STATES ====================== -->
+  <text x="48" y="334" font-size="14" font-weight="600" fill="#475569" letter-spacing="0.5">STATES</text>
+
+  <!-- default -->
+  <rect x="48" y="356" width="160" height="48" rx="8" fill="#4f46e5"/>
+  <text x="128" y="385" font-size="15" font-weight="500" fill="#ffffff" text-anchor="middle">Button</text>
+  <text x="48" y="424" font-size="11" fill="#64748b">default · #4f46e5</text>
+
+  <!-- hover -->
+  <rect x="232" y="356" width="160" height="48" rx="8" fill="#4338ca"/>
+  <text x="312" y="385" font-size="15" font-weight="500" fill="#ffffff" text-anchor="middle">Button</text>
+  <text x="232" y="424" font-size="11" fill="#64748b">hover · #4338ca</text>
+
+  <!-- focus -->
+  <rect x="416" y="356" width="160" height="48" rx="8" fill="#4f46e5"/>
+  <rect x="410" y="350" width="172" height="60" rx="12" fill="none" stroke="#4f46e5" stroke-width="2"/>
+  <text x="496" y="385" font-size="15" font-weight="500" fill="#ffffff" text-anchor="middle">Button</text>
+  <text x="416" y="424" font-size="11" fill="#64748b">focus · 2px ring</text>
+
+  <!-- pressed -->
+  <rect x="600" y="356" width="160" height="48" rx="8" fill="#3730a3"/>
+  <text x="680" y="385" font-size="15" font-weight="500" fill="#ffffff" text-anchor="middle">Button</text>
+  <text x="600" y="424" font-size="11" fill="#64748b">pressed · #3730a3</text>
+
+  <!-- disabled -->
+  <rect x="48" y="452" width="160" height="48" rx="8" fill="#94a3b8"/>
+  <text x="128" y="481" font-size="15" font-weight="500" fill="#f8fafc" text-anchor="middle">Button</text>
+  <text x="48" y="520" font-size="11" fill="#64748b">disabled · #94a3b8</text>
+
+  <!-- loading -->
+  <rect x="232" y="452" width="160" height="48" rx="8" fill="#4f46e5"/>
+  <g fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round">
+    <path d="M 290 476 a 9 9 0 1 1 -6 -8" opacity="0.9"/>
+  </g>
+  <text x="324" y="481" font-size="15" font-weight="500" fill="#ffffff" opacity="0.7" text-anchor="middle">Loading</text>
+  <text x="232" y="520" font-size="11" fill="#64748b">loading · aria-busy</text>
+
+  <!-- error -->
+  <rect x="416" y="452" width="160" height="48" rx="8" fill="#ffffff" stroke="#ef4444" stroke-width="1"/>
+  <text x="496" y="481" font-size="15" font-weight="500" fill="#0f172a" text-anchor="middle">Submit</text>
+  <text x="416" y="520" font-size="11" fill="#64748b">error · #ef4444 border</text>
+
+  <!-- secondary -->
+  <rect x="600" y="452" width="160" height="48" rx="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="680" y="481" font-size="15" font-weight="500" fill="#0f172a" text-anchor="middle">Cancel</text>
+  <text x="600" y="520" font-size="11" fill="#64748b">secondary · #e2e8f0</text>
+
+  <!-- ====================== TOKEN LEGEND ====================== -->
+  <text x="48" y="586" font-size="14" font-weight="600" fill="#475569" letter-spacing="0.5">TOKEN LEGEND</text>
+
+  <g font-size="12" fill="#475569">
+    <rect x="48"  y="606" width="20" height="20" rx="4" fill="#0f172a"/>
+    <text x="76" y="621">ink #0f172a</text>
+
+    <rect x="200" y="606" width="20" height="20" rx="4" fill="#475569"/>
+    <text x="228" y="621">slate #475569</text>
+
+    <rect x="360" y="606" width="20" height="20" rx="4" fill="#94a3b8"/>
+    <text x="388" y="621">muted #94a3b8</text>
+
+    <rect x="520" y="606" width="20" height="20" rx="4" fill="#e2e8f0" stroke="#cbd5e1" stroke-width="1"/>
+    <text x="548" y="621">line #e2e8f0</text>
+
+    <rect x="680" y="606" width="20" height="20" rx="4" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/>
+    <text x="708" y="621">surface #f8fafc</text>
+
+    <rect x="48"  y="640" width="20" height="20" rx="4" fill="#4f46e5"/>
+    <text x="76" y="655">primary #4f46e5</text>
+
+    <rect x="200" y="640" width="20" height="20" rx="4" fill="#4338ca"/>
+    <text x="228" y="655">hover #4338ca</text>
+
+    <rect x="360" y="640" width="20" height="20" rx="4" fill="#3730a3"/>
+    <text x="388" y="655">pressed #3730a3</text>
+
+    <rect x="520" y="640" width="20" height="20" rx="4" fill="#16a34a"/>
+    <text x="548" y="655">success #16a34a</text>
+
+    <rect x="680" y="640" width="20" height="20" rx="4" fill="#ef4444"/>
+    <text x="708" y="655">danger #ef4444</text>
+  </g>
+</svg>

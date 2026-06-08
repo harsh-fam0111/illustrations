@@ -1,0 +1,6 @@
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none"
+     stroke="#0f172a" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+  <!-- home — split from the navigation set, native 24x24 grid, 2u padding -->
+  <path d="M4 11 l8 -7 l8 7 v8 a1 1 0 0 1 -1 1 h-14 a1 1 0 0 1 -1 -1 z"/>
+  <path d="M10 21 v-6 h4 v6"/>
+</svg>

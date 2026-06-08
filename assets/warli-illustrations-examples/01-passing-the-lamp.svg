@@ -1,0 +1,65 @@
+<svg viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg"
+     font-family="'Bradley Hand','Comic Sans MS','Segoe Print',cursive">
+  <defs>
+    <filter id="paint" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.014" numOctaves="2" seed="7" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <marker id="awh" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7"
+            orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10" fill="none" stroke="#f2e9dc" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <!-- reusable Warli figure, origin at torso center -->
+    <g id="warli">
+      <circle cx="0" cy="-50" r="9" fill="#f2e9dc"/>
+      <path d="M-15 -38 L15 -38 L0 0 L15 38 L-15 38 L0 0 Z" fill="#f2e9dc"/>
+      <path d="M-12 -32 L-34 -14 M12 -32 L34 -14" stroke="#f2e9dc" stroke-width="3.4"
+            fill="none" stroke-linecap="round"/>
+      <path d="M-12 36 L-22 64 M12 36 L22 64" stroke="#f2e9dc" stroke-width="3.4"
+            fill="none" stroke-linecap="round"/>
+    </g>
+    <!-- a small clay lamp (diya) with a flame -->
+    <g id="diya">
+      <path d="M-16 8 Q0 22 16 8 Z" fill="#f2e9dc"/>
+      <path d="M0 -2 L0 8" stroke="#f2e9dc" stroke-width="2.4" stroke-linecap="round"/>
+      <path d="M0 -2 Q-6 -14 0 -24 Q6 -14 0 -2 Z" fill="#d9a441"/>
+    </g>
+  </defs>
+
+  <rect width="1600" height="900" fill="#a0531e"/>
+
+  <g filter="url(#paint)">
+    <!-- ground line -->
+    <path d="M120 690 L1480 690" stroke="#f2e9dc" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+    <!-- four figures in a line, each handing the lamp to the next -->
+    <use href="#warli" transform="translate(300,640) scale(0.95)"/>
+    <use href="#warli" transform="translate(620,640) scale(0.95)"/>
+    <use href="#warli" transform="translate(940,640) scale(0.95)"/>
+    <use href="#warli" transform="translate(1260,640) scale(0.95)"/>
+
+    <!-- raised passing arms between figures -->
+    <path d="M312 606 L470 560 M610 560 L770 560" stroke="#f2e9dc" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M632 606 L790 560 M930 560 L1090 560" stroke="#f2e9dc" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M952 606 L1110 560 M1250 560 L1410 560" stroke="#f2e9dc" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+    <!-- the lamp travelling down the line -->
+    <use href="#diya" transform="translate(470,548) scale(1.0)"/>
+    <use href="#diya" transform="translate(790,548) scale(1.0)"/>
+    <use href="#diya" transform="translate(1110,548) scale(1.0)"/>
+    <use href="#diya" transform="translate(1410,540) scale(1.25)"/>
+
+    <!-- flow arrow over the line -->
+    <path d="M300 480 Q800 430 1410 470" stroke="#f2e9dc" stroke-width="2.6" fill="none"
+          stroke-linecap="round" marker-end="url(#awh)"/>
+  </g>
+
+  <!-- labels -->
+  <text x="240" y="780" font-size="30" fill="#f2e9dc" filter="url(#paint)"
+        transform="rotate(-2 240 780)">one knows</text>
+  <text x="1180" y="780" font-size="30" fill="#f2e9dc" filter="url(#paint)"
+        transform="rotate(2 1180 780)">all are lit</text>
+  <text x="620" y="420" font-size="32" fill="#d9a441" filter="url(#paint)"
+        transform="rotate(-1 620 420)">share to multiply</text>
+</svg>
