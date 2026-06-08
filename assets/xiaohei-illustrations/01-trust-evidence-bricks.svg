@@ -1,0 +1,120 @@
+<svg viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg"
+     font-family="'Bradley Hand','Comic Sans MS','Segoe Print',cursive">
+  <defs>
+    <filter id="wob" x="-8%" y="-8%" width="116%" height="116%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.011" numOctaves="2" seed="9" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="4" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="wobt" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.021" numOctaves="2" seed="4" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="1.7" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7"
+            orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10" fill="none" stroke="#ea7317" stroke-width="2.2"
+            stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <rect width="1600" height="900" fill="#ffffff"/>
+
+  <g filter="url(#wob)" fill="none" stroke="#1b1b1b" stroke-linecap="round" stroke-linejoin="round">
+
+    <!-- LEFT GROUND (where Xiaohei started) -->
+    <g stroke-width="3">
+      <path d="M70 672 L330 666" fill="none"/>
+      <path d="M330 666 L330 850"/>
+      <path d="M100 690 L88 730 M150 690 L138 730 M200 690 L188 730 M260 690 L248 730"
+            stroke-width="1.6"/>
+    </g>
+
+    <!-- LAID EVIDENCE BRICKS (already placed, ascending slightly) -->
+    <g stroke-width="2.6">
+      <path d="M316 648 L412 644 L412 678 L316 682 Z" fill="#ffffff"/>
+      <path d="M320 663 L408 660" stroke-width="1.4"/>
+      <path d="M418 642 L514 638 L514 672 L418 676 Z" fill="#ffffff"/>
+      <path d="M422 657 L510 654" stroke-width="1.4"/>
+      <path d="M520 636 L616 632 L616 666 L520 670 Z" fill="#ffffff"/>
+      <path d="M524 651 L612 648" stroke-width="1.4"/>
+    </g>
+
+    <!-- XIAOHEI standing on the last brick, leaning to set the next one -->
+    <g>
+      <path d="M545 430 C512 430 497 466 498 508 C499 556 510 600 545 602
+               C582 600 593 556 594 508 C595 466 580 430 545 430 Z"
+            fill="#1b1b1b" stroke="none"/>
+      <!-- legs onto brick top (~636) -->
+      <path d="M528 600 L521 634" stroke="#1b1b1b" stroke-width="8"/>
+      <path d="M507 634 L533 634" stroke="#1b1b1b" stroke-width="6"/>
+      <path d="M564 600 L572 634" stroke="#1b1b1b" stroke-width="8"/>
+      <path d="M558 634 L584 634" stroke="#1b1b1b" stroke-width="6"/>
+      <!-- arms reaching forward-down to the brick in hand -->
+      <path d="M500 522 Q565 562 660 596" stroke="#1b1b1b" stroke-width="8"/>
+      <path d="M590 528 Q650 556 722 588" stroke="#1b1b1b" stroke-width="8"/>
+    </g>
+
+    <!-- BRICK IN HANDS (about to be placed into the void) -->
+    <g stroke-width="2.6">
+      <path d="M652 584 L746 578 L750 612 L656 618 Z" fill="#ffffff"/>
+      <path d="M656 601 L748 595" stroke-width="1.4"/>
+    </g>
+
+    <!-- THE VOID being bridged: cliff edges + depth lines, empty white middle -->
+    <g stroke-width="2">
+      <path d="M770 640 L780 700 M800 648 L812 712 M840 656 L852 724" stroke-width="1.5"/>
+      <path d="M1208 624 L1196 690 M1240 612 L1228 678 M1272 600 L1262 666" stroke-width="1.5"/>
+    </g>
+
+    <!-- GHOST future brick positions (dashed) climbing toward the goal -->
+    <g stroke-width="2" stroke-dasharray="9 8">
+      <path d="M812 612 L906 606 L910 638 L816 644 Z"/>
+      <path d="M952 588 L1046 582 L1050 614 L956 620 Z"/>
+      <path d="M1090 560 L1184 554 L1188 586 L1094 592 Z"/>
+    </g>
+
+    <!-- RIGHT GROUND + GOAL FLAG (where trust lives, higher up) -->
+    <g stroke-width="3">
+      <path d="M1282 568 L1542 560" fill="none"/>
+      <path d="M1282 568 L1282 850"/>
+      <path d="M1330 580 L1318 620 M1390 580 L1378 620 M1450 580 L1438 620 M1510 580 L1498 620"
+            stroke-width="1.6"/>
+      <!-- flag pole -->
+      <path d="M1360 566 L1360 372"/>
+      <!-- flag -->
+      <path d="M1360 380 L1470 404 L1360 432 Z" fill="#ffffff"/>
+    </g>
+
+    <!-- small megaphone, crossed out: trust is NOT shouted -->
+    <g stroke-width="2.4">
+      <path d="M150 210 L208 188 L208 250 L150 228 Z" fill="#ffffff"/>
+      <path d="M208 196 L240 186 L240 252 L208 242 Z" fill="#ffffff"/>
+      <path d="M150 219 L120 219" stroke-width="2"/>
+    </g>
+
+    <!-- ORANGE direction-of-travel arc toward the flag -->
+    <path d="M770 558 Q1060 470 1330 452"
+          stroke="#ea7317" stroke-width="3.4" fill="none" marker-end="url(#ah)"/>
+
+  </g>
+
+  <!-- EYES (crisp, outside wobble) -->
+  <circle cx="531" cy="498" r="7.5" fill="#ffffff"/>
+  <circle cx="561" cy="498" r="7.5" fill="#ffffff"/>
+
+  <!-- red cross over megaphone -->
+  <line x1="128" y1="176" x2="258" y2="262" stroke="#d83a2e" stroke-width="3"
+        stroke-linecap="round" filter="url(#wobt)"/>
+  <line x1="258" y1="176" x2="128" y2="262" stroke="#d83a2e" stroke-width="3"
+        stroke-linecap="round" filter="url(#wobt)"/>
+
+  <!-- LABELS -->
+  <text x="120" y="320" font-size="30" fill="#d83a2e" filter="url(#wobt)"
+        transform="rotate(-3 120 320)">not shouted out</text>
+  <text x="372" y="748" font-size="29" fill="#1b1b1b" filter="url(#wobt)"
+        transform="rotate(-2 372 748)">one brick at a time</text>
+  <text x="636" y="672" font-size="23" fill="#2f6fd0" filter="url(#wobt)"
+        transform="rotate(-2 636 672)">evidence</text>
+  <text x="1316" y="350" font-size="34" fill="#d83a2e" filter="url(#wobt)"
+        transform="rotate(-2 1316 350)">trust</text>
+
+</svg>

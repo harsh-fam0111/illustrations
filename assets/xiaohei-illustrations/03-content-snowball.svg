@@ -1,0 +1,93 @@
+<svg viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg"
+     font-family="'Bradley Hand','Comic Sans MS','Segoe Print',cursive">
+  <defs>
+    <filter id="wob" x="-8%" y="-8%" width="116%" height="116%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.011" numOctaves="2" seed="23" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="4" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="wobt" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.022" numOctaves="2" seed="8" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="1.7" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7"
+            orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10" fill="none" stroke="#ea7317" stroke-width="2.2"
+            stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <rect width="1600" height="900" fill="#ffffff"/>
+
+  <g filter="url(#wob)" fill="none" stroke="#1b1b1b" stroke-linecap="round" stroke-linejoin="round">
+
+    <!-- RISING SLOPE -->
+    <g stroke-width="3">
+      <path d="M90 770 L1500 312"/>
+      <!-- light hatch under the slope -->
+      <path d="M260 724 L246 766 M460 660 L446 704 M680 588 L666 632
+               M900 516 L886 560 M1120 444 L1106 488 M1320 380 L1306 424"
+            stroke-width="1.5"/>
+    </g>
+
+    <!-- STAGE 1: tiny starting ball (ghost) -->
+    <g stroke-width="2" stroke-dasharray="7 7">
+      <circle cx="250" cy="712" r="26" fill="#ffffff"/>
+    </g>
+
+    <!-- CURRENT SNOWBALL Xiaohei is pushing (medium, packed with content bits) -->
+    <g stroke-width="2.8">
+      <circle cx="745" cy="556" r="92" fill="#ffffff"/>
+      <!-- embedded content squares accreted into the ball -->
+      <path d="M700 520 L734 512 L742 546 L708 554 Z" fill="#ffffff" stroke-width="1.8"/>
+      <path d="M756 540 L788 534 L794 564 L762 570 Z" fill="#ffffff" stroke-width="1.8"/>
+      <path d="M712 572 L742 566 L748 594 L718 600 Z" fill="#ffffff" stroke-width="1.8"/>
+      <path d="M766 584 L792 580 L796 604 L770 608 Z" fill="#ffffff" stroke-width="1.8"/>
+      <!-- motion curls trailing the roll -->
+      <path d="M660 600 Q636 610 642 632" stroke-width="2"/>
+      <path d="M690 620 Q668 632 676 652" stroke-width="2"/>
+    </g>
+
+    <!-- XIAOHEI pushing behind-left of the ball, feet on the slope -->
+    <g>
+      <path d="M560 470 C526 470 510 506 511 550 C512 600 524 648 560 650
+               C596 648 608 600 609 550 C610 506 594 470 560 470 Z"
+            fill="#1b1b1b" stroke="none"/>
+      <!-- legs braced on the slope (slope y near x560 ~ 618) -->
+      <path d="M544 648 L532 690" stroke="#1b1b1b" stroke-width="8"/>
+      <path d="M520 690 L548 686" stroke="#1b1b1b" stroke-width="6"/>
+      <path d="M578 648 L600 678" stroke="#1b1b1b" stroke-width="8"/>
+      <path d="M594 678 L620 672" stroke="#1b1b1b" stroke-width="6"/>
+      <!-- arms pushing onto the ball surface -->
+      <path d="M600 528 Q636 540 666 560" stroke="#1b1b1b" stroke-width="8"/>
+      <path d="M604 560 Q640 576 664 596" stroke="#1b1b1b" stroke-width="8"/>
+    </g>
+
+    <!-- STAGE 3: huge future ball (ghost) up the slope -->
+    <g stroke-width="2.4" stroke-dasharray="10 9">
+      <circle cx="1252" cy="392" r="150" fill="#ffffff"/>
+      <path d="M1196 350 L1232 342 L1240 378 L1204 386 Z" stroke-width="1.6"/>
+      <path d="M1260 372 L1296 364 L1304 400 L1268 408 Z" stroke-width="1.6"/>
+      <path d="M1212 410 L1246 402 L1254 438 L1220 446 Z" stroke-width="1.6"/>
+    </g>
+
+    <!-- ORANGE direction: same push, bigger return, up the slope -->
+    <path d="M330 716 Q700 600 1080 452"
+          stroke="#ea7317" stroke-width="3.4" fill="none" marker-end="url(#ah)"/>
+
+  </g>
+
+  <!-- EYES (crisp) -->
+  <circle cx="546" cy="500" r="7.5" fill="#ffffff"/>
+  <circle cx="576" cy="500" r="7.5" fill="#ffffff"/>
+
+  <!-- LABELS -->
+  <text x="206" y="676" font-size="26" fill="#1b1b1b" filter="url(#wobt)"
+        transform="rotate(-4 206 676)">one piece</text>
+  <text x="470" y="452" font-size="27" fill="#2f6fd0" filter="url(#wobt)"
+        transform="rotate(-3 470 452)">same push</text>
+  <text x="690" y="430" font-size="29" fill="#1b1b1b" filter="url(#wobt)"
+        transform="rotate(-3 690 430)">rolls up more</text>
+  <text x="1150" y="250" font-size="36" fill="#d83a2e" filter="url(#wobt)"
+        transform="rotate(-3 1150 250)">compounding</text>
+
+</svg>
